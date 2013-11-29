@@ -1,0 +1,8 @@
+<!-- Erubis post from template -->
+<div class='post' >
+	<h2><a href='/posts/<%= post.postname %>'><%= post['title'] %></a></h2>
+	<h5><%= post['date'] ? post['date'] : '<em>Unknown date</em>' %></h5>
+	<div class='postbody'>
+	<%= post['body'] %>
+	</div>
+</div>

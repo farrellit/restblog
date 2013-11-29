@@ -10,6 +10,10 @@ Web Endpoints are defined (sinatra) to provide an interface and to translate bet
 
 ## Web Endpoints
 
+### GET /
+
+return index.html, a MVVM frontend in JS to manage the client side
+
 ### GET /posts
 
 returns a list of post names in JSON
@@ -24,4 +28,8 @@ error message should be explanation
 
 ### class Blog
 
-manages the blog and provides interfaces
+manages the blog and provides interface to the parts of the blog
+
+### class Blog::Post
+
+manages logic behind posts

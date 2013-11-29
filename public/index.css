@@ -1,0 +1,32 @@
+body {
+	background-color: gray;
+	font-family: sans-serif;
+}
+
+body div.main {
+	background-color: white;
+	margin-left: 200px;
+	position: relative;
+}
+
+body div.sidebar {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	background-color: black;
+	color: white;
+	font-family: serif;
+	padding: 6px;
+}
+
+body div.sidebar a, body div.sidebar a:visited {
+	color: gray;
+}
+
+body div.sidebar a:active {
+	color: red;
+}
+
+body div.sidebar a:hover {
+	color: #ffc;
+}

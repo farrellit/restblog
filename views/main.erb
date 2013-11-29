@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+<% 
+begin 
+	title
+rescue NameError => e 
+	title = 'Blog'
+end
+-%>
+<title><%= title %></title>
+<link rel='stylesheet' href='/index.css'>
+<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="/index.js" ></script>
+</head>
+<body>
+<h1>Blog</h1>
+<div class='sidebar'>
+	<h2>Posts <button onclick='updatePostList()'>Update</button></h2>
+	<div id='postlist'>
+	Loading...
+	</div>
+</div>
+<div class='main'>
+<%= content %>
+</div>
+</body>
+</html>

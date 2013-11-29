@@ -1,0 +1,8 @@
+<!-- Erubis post list from template -->
+<div class='postlist' >
+<% posts.each do |post| -%>
+	<p>
+		<a href="/posts/<%=post.postname%>"><%= post['title'] %></a>
+	</p>
+<% end %>
+</div>
