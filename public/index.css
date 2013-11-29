@@ -1,26 +1,55 @@
 body {
+	position: relative;
 	background-color: gray;
 	font-family: sans-serif;
+	max-width: 900px;
+	border: outset 3px black;
+	margin: auto;
 }
 
+body div.all {
+	background-color: black;
+	color: white;
+}
+
+body div.header {
+	background-color: black;
+	color: white
+}
+
+	body div.header h1 {
+		margin: 0;
+		padding: 6px;
+	}
+	
 body div.main {
 	background-color: white;
 	margin-left: 200px;
 	position: relative;
+	padding: 9px;
 }
 
 body div.sidebar {
 	position: absolute;
 	left: 0;
-	width: 200px;
+	width: 188px;
+	padding: 6px;
 	background-color: black;
 	color: white;
 	font-family: serif;
-	padding: 6px;
+}
+
+body div.sidebar p {
+	margin-top: 3px; margin-bottom: 3px; 
+	padding-top: 3px; padding-bottom: 3px;
+	border-top : solid 1px black;
+	border-bottom: solid 1px black;
+	background-color: #ddd;
+	color: black;
 }
 
 body div.sidebar a, body div.sidebar a:visited {
-	color: gray;
+	color: black;
 }
 
 body div.sidebar a:active {
@@ -28,5 +57,5 @@ body div.sidebar a:active {
 }
 
 body div.sidebar a:hover {
-	color: #ffc;
+	color: #660;
 }

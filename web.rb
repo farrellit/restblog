@@ -169,5 +169,9 @@ get "/favicon.ico" do
 end
 
 get "/" do
-	redirect"/index.html", 301
+	page blog, erb( :welcome )
+end
+
+get "/index.html" do
+	redirect "/", 301
 end
