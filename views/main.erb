@@ -14,17 +14,34 @@ end
 <script src="/index.js" ></script>
 </head>
 <body>
+<div class='supercontainer'>
+<div class='container'>
 <div class='header'>
-	<h1 >Blog</h1>
+	<nav>
+		<a href='/login'>login</a> 
+	</nav>
+	<h1 ><a href='/' ><%= title %></a></h1>
 </div>
+</div><!-- container -->
+</div><!-- supercontainer -->
+<div class='supercontainer'>
+<div class='container'>
 <div class='sidebar'>
-	<h2>Posts <button onclick='updatePostList()'>Update</button></h2>
+	<h2><a href='/posts'>Posts</a> <button style='display: none' onclick='updatePostList()'>Update</button></h2>
 	<div id='postlist'>
 	Loading...
 	</div>
 </div>
 <div class='main'>
 <%= content %>
-</div>
+</div><!-- main -->
+</div><!-- container -->
+</div><!-- supercontainer -->
+<footer>
+<%
+t = Time.new
+-%>
+&copy; <%= t.year %> <span>|</span> Generated <%= t.strftime "%b %e %k:%M:%S" %> <span>|</span> Dan Farrell
+</footer>
 </body>
 </html>
